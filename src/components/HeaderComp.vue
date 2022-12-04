@@ -25,7 +25,7 @@
 
     <!-- FINE HEADER SUPERIORE  -->
 
-    <hr class="hr">
+
 
     <!-- HEADER PARTE SOTTO CON LOGO -->
 
@@ -34,12 +34,8 @@
         <img src="../assets/img/classic_shop_logo2x.png" class="logo" alt="Logo AVADA">
 
         <div class="headersottomenu">
-          <p>Home<font-awesome-icon icon="fa-solid fa-chevron-down" /></p>
-          <p>Shop <font-awesome-icon icon="fa-solid fa-chevron-down" /></p>
-          <p>Products<font-awesome-icon icon="fa-solid fa-chevron-down" /></p>
-          <p>Categories<font-awesome-icon icon="fa-solid fa-chevron-down" /></p>
-          <p>News</p>
-          <p>Elements<font-awesome-icon icon="fa-solid fa-chevron-down" /></p>
+          <p v-for="(elem, index) in dati" :key="index">{{elem.tagHeader}}<font-awesome-icon icon="fa-solid fa-chevron-down" /></p>
+         
           <button>SHOP NOW!</button>
           <font-awesome-icon class="glass" icon="fa-solid fa-magnifying-glass" />
         </div>
@@ -68,6 +64,8 @@ import JumboTron from './JumboTron.vue';
       JumboTron
      },
      props: {
+
+      dati : Array
        
      }
    }
@@ -177,6 +175,7 @@ import JumboTron from './JumboTron.vue';
     }
     
  
+  
   
   
   }

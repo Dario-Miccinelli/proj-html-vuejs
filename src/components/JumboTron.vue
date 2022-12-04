@@ -32,7 +32,7 @@ export default {
     margin-top: 1.2rem;
   
       height: 640px;
-      width: 100vw;
+      width: 99.1vw;
     
       background-repeat: no-repeat;
         background-size: cover ;

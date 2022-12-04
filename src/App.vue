@@ -1,8 +1,8 @@
 <template>
   <div id="app">
    
-    <HeaderComp/>
-    <MainComp/>
+    <HeaderComp :dati="datiHeader"/>
+    <MainComp :featuredProd="featuredProd"/>
     <FooterComp/>
   </div>
 </template>
@@ -26,6 +26,68 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp
+},
+data() {
+  return {
+
+    datiHeader: [
+
+
+    {
+      tagHeader: "Home",
+      
+    },
+    {
+      tagHeader: "Shop"
+    },
+    {
+      tagHeader: "Products"
+    },
+    {
+      tagHeader: "Categories"
+    },
+    {
+      tagHeader: "News"
+    },
+    {
+      tagHeader: "Elements"
+    },
+
+
+    ],
+
+    featuredProd: [
+      {
+        img: 'black_elegant_leather_jacket-400x520.jpg',
+        prodName: 'Black Leather Jacket',
+        prodP: 'Men, Jackets, Jeans',
+        Price: '$235'
+
+      },
+      {
+        img: 'black_leather_suit-400x520.jpg',
+        prodName: 'Black Leather Suit',
+        prodP: 'Men, Jackets',
+        Price: '$176'
+
+      },
+      {
+        img: 'blue_jacket_and_white_stripe_tee-400x520.jpg',
+        prodName: 'Blue Jacket & Stripe Tee',
+        prodP: 'Men, Jackets, Suits',
+        Price: '$580'
+
+      },
+      {
+        img: 'modern_black_leather_suit-400x520.jpg',
+        prodName: 'Modern Black Leather Suit',
+        prodP: 'Men, Jackets',
+        Price: '$96'
+
+      }
+    ]
+   
+  }
 }
 }
 </script>
