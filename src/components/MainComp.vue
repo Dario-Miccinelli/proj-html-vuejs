@@ -28,6 +28,7 @@
           <h4>{{ elem.prodName }}</h4>
 
           <p>{{ elem.prodP }}</p>
+     
 
           <p class="price">{{ elem.Price }}</p>
         </div>
@@ -427,5 +428,13 @@ export default {
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
+
+  // prova hover
+  #main > div > section.d-flex.section-feat.m-auto > div > img:hover {
+    background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+    
+  }
+
+  // prova hover /
 </style>
    
