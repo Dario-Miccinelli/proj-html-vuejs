@@ -1,6 +1,6 @@
 <template>
-  <div id="main" class="m-auto">
-    <div class="featured ">
+  <div id="main" class="m-auto main">
+    <div>
 
       <h2>Featured Products</h2>
 
@@ -103,13 +103,13 @@
           <a>VIEW MORE</a>
         </div>
         
-          <img class="smallerpic" src="../assets/img/promo_box_1_bg.jpg" alt="">
+          <img  src="../assets/img/promo_box_1_bg.jpg" alt="">
           <div class="position-right">
           <h2 class=" ">Free Shipping</h2>
           <p>Christmas sale from 05 december to 25 december! </p>
           <a>VIEW MORE</a>
         </div>
-          <img class="smallerpic" src="../assets/img/promo_box_2_bg.jpg" alt="">
+          <img  src="../assets/img/promo_box_2_bg.jpg" alt="">
           
         </div>
       </section>
@@ -135,31 +135,34 @@
     </section>
 
     <!-- fine best seller  -->
+
+    <MainCompBottom/>
+    
     </div>
+    
 
-
-
+    
+   
   </div>
 </template>
    
 <script>
+import MainCompBottom from './MainCompBottom.vue';
+
 export default {
-  name: 'MainComp',
-  props: {
-    featuredProd: Array,
-    BestSeller: Array,
-    newArrivals: Array
-
-  },
-  methods: {
-
-
-  },
-  data() {
-    return {
-
+    name: "MainComp",
+    props: {
+        featuredProd: Array,
+        BestSeller: Array,
+        newArrivals: Array
+    },
+    methods: {},
+    data() {
+        return {};
+    },
+    components: { 
+      MainCompBottom 
     }
-  }
 }
 
 </script>
@@ -186,7 +189,7 @@ export default {
   margin: auto;
 }
 
-.featured {
+.main {
   font-size: 1.7rem;
   width: 100%;
   margin: auto;
