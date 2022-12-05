@@ -69,7 +69,72 @@
         </div>
 
       </section>
+      
+      <!-- section collection end -->
 
+
+      <!-- best seller -->
+
+      <section class="best-seller">
+      
+        <div>
+          <h2>Best Seller</h2>
+          <p class="smaller">Must have products from our top sellers</p>
+         </div>
+
+         <div class="cards">
+
+          <img v-for="(elem, index) in BestSeller" :key="index" :src="`/images/${elem.img}`" alt="Img Best Seller">
+
+         </div>
+      
+      
+      </section>
+
+      <!-- fine best seller  -->
+
+
+      <!-- pt con bg e 2 img -->
+      <section class="grey-bg">
+        <div class="d-flex pic-container">
+          <div class="position-section">
+          <h2 class=" ">70% Off</h2>
+          <p>Christmas sale from 05 december to 25 december!  </p>
+          <a>VIEW MORE</a>
+        </div>
+        
+          <img class="smallerpic" src="../assets/img/promo_box_1_bg.jpg" alt="">
+          <div class="position-right">
+          <h2 class=" ">Free Shipping</h2>
+          <p>Christmas sale from 05 december to 25 december! </p>
+          <a>VIEW MORE</a>
+        </div>
+          <img class="smallerpic" src="../assets/img/promo_box_2_bg.jpg" alt="">
+          
+        </div>
+      </section>
+
+      <!-- fine pt con bg e 2 img -->
+
+      <!-- best seller -->
+
+      <section class="new-arrivals">
+      
+      <div class="mt-rem">
+        <h2>New Arrivals</h2>
+        <p class="smaller">Brand new products from top designers</p>
+       </div>
+
+       <div class="new-arr-cards">
+
+        <img v-for="(elem, index) in newArrivals" :key="index" :src="`/images/${elem.img}`" alt="Img New Arrivals">
+
+       </div>
+    
+    
+    </section>
+
+    <!-- fine best seller  -->
     </div>
 
 
@@ -81,7 +146,9 @@
 export default {
   name: 'MainComp',
   props: {
-    featuredProd: Object
+    featuredProd: Array,
+    BestSeller: Array,
+    newArrivals: Array
 
   },
   methods: {
@@ -101,6 +168,10 @@ export default {
 <style scoped lang="scss">
 .d-flex {
   display: flex;
+}
+
+.mt-rem {
+  margin-top: 3.5rem;
 }
 
 #main {
@@ -258,5 +329,100 @@ export default {
   margin-top: 25rem;
 
 }
+
+.cards {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.new-arr-cards {
+  display: flex;
+}
+
+.pic-container {
+  width: 50%;
+
+ 
+}
+
+.grey-bg {
+  width: 100%;
+  margin: auto;
+  background-image: url('../assets/img/bkgd_confetti-compressor.jpg');
+}
+
+#main > div > section.grey-bg > div > img:nth-child(2) {
+    width: 100%;
+    padding: 4rem 7rem;
+  
+  }
+
+  #main > div > section.grey-bg > div > img:nth-child(4) {
+    width: 100%;
+    padding: 4rem 7rem;
+    
+  }
+
+
+  .position-section {
+    position: absolute;
+    left: 15rem;
+    top: 188rem;
+    color: white;
+    text-align: left;
+    font-size: smaller;
+    p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+  }
+
+  a {
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 13px;
+    padding: 5px 15px;
+    background-color: #ffffff1d;
+   
+
+  }
+  }
+
+  .position-right {
+    position: absolute;
+    right: 16rem;
+    top: 188rem;
+    color: white;
+    font-size: smaller;
+    text-align: left;
+
+    p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+  }
+
+  a {
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 13px;
+    padding: 5px 15px;
+    background-color: #ffffff1d;
+   
+
+  }
+  }
+
+  #main > div > section.new-arrivals > div.new-arr-cards > img {
+    width: 15%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 </style>
    

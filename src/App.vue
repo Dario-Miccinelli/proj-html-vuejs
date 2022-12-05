@@ -2,7 +2,7 @@
   <div id="app">
    
     <HeaderComp :dati="datiHeader"/>
-    <MainComp :featuredProd="featuredProd"/>
+    <MainComp :featuredProd="featuredProd" :BestSeller="BestSellerImg" :newArrivals="NewArrivalsImg"/>
     <FooterComp/>
   </div>
 </template>
@@ -85,7 +85,47 @@ data() {
         Price: '$96'
 
       }
-    ]
+    ],
+
+    BestSellerImg: [
+      {
+        img: "bestseller1.jpg"
+      },
+      {
+        img: "bestseller2.jpg"
+      },
+      {
+        img: "bestseller3.jpg"
+      },
+      {
+        img: "bestseller4.jpg"
+      },
+      {
+        img: "bestseller5.jpg"
+      },
+    ],
+
+    NewArrivalsImg: [ 
+     
+
+    {
+      img: "newarrivals1.jpg"
+    },
+    {
+      img: "newarrivals2.jpg"
+    },
+    {
+      img: "newarrivals3.jpg"
+    },
+    {
+      img: "newarrivals4.jpg"
+    },
+    {
+      img: "newarrivals5.jpg"
+    },
+  ]
+
+
    
   }
 }
