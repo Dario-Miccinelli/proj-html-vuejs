@@ -545,12 +545,12 @@ export default {
 
 
 .card-hover2 {
-  height: 412px;
+  height: 400px;
   width: 315px;
   margin: 15px;
   background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
   position: relative;
-  bottom: 34.8rem;
+  bottom: 33.7rem;
   font-size: 3rem;
   right: 1.2rem;
   opacity: 0;
@@ -615,7 +615,7 @@ right: 4.2rem;
 
 
 .m-top {
-  margin-top: 18rem;
+  margin-top: 7rem;
 }
 
 // prova hover /
