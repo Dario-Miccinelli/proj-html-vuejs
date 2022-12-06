@@ -381,6 +381,10 @@ img {
 #main > div > div.main-under > div:nth-child(5) > div > div > div:nth-child(3) > div > div:nth-child(2) > div.img > img {
     margin-left: 20px;
 }
+
+#main > div > div.main-under > div:nth-child(5) > div > div > div:nth-child(1) > div > div:nth-child(6) > div.img > img {
+    margin-left: -15px;
+}
 // end fix
 
 .line-th {
