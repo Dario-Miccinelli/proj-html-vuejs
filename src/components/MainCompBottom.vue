@@ -54,109 +54,22 @@
 
         <!-- fine our blog -->
 
-        <div class="before-footer">
+       
 
-            <div class="line">
-                <p>FEATURED</p>
+        <FooterColumn />
 
-                <span>Black Jacket <strong>$125</strong></span>
-                <img src="../assets/img/black_leather_jacket-120x156.jpg" alt="">
-                <hr>
-                <span>Black Leather Jacket</span>
-                <!-- <span>mettere stelline</span> -->
-                <img src="../assets/img/black_elegant_leather_jacket-120x156.jpg" alt="">
-                <hr>
-                <span>Black Leather Jacket <strong>$57</strong></span>
-                <img class="m-right" src="../assets/img/hipster_black_top-120x156.jpg" alt="">
-                <hr>
-
-            </div>
-
-
-
-
-
-            <div class="line">
-                <p>ON SALE</p>
-
-                <span>Black Jacket <strong>$125</strong></span>
-                <img src="../assets/img/black_elegant_leather_jacket-120x156.jpg" alt="">
-                <hr>
-                <span>Black Leather Jacket</span>
-                <!-- <span>mettere stelline</span> -->
-                <img src="../assets/img/blue_leather_jacket-120x156.jpg" alt="">
-                <hr>
-                <span>Black Leather Jacket <strong>$57</strong></span>
-                <img src="../assets/img/modern_leather_boots-120x156.jpg" alt="">
-                <hr>
-
-            </div>
-
-
-            <div>
-
-                <div class="line">
-                    <p>TOP RATED</p>
-
-                    <span>Black Jacket <strong>$125</strong></span>
-                    <img src="../assets/img/leather_gloves-120x156.jpg" alt="">
-                    <hr>
-                    <span>Black Leather Jacket</span>
-
-                    <img src="../assets/img/black_elegant_leather_jacket-120x156.jpg" alt="">
-                    <hr>
-                    <span>Black Leather Jacket <strong>$57</strong></span>
-
-                    <img src="../assets/img/spring_printed_dress-120x156.jpg" alt="">
-                    <hr>
-
-                </div>
-            </div>
-
-            <div>
-                <div class="line">
-                    <p>LATEST REVIEWS</p>
-
-                    <div>
-                        <span>Black Jacket <strong>$125</strong></span>
-                    </div>
-
-                    <div>
-                        <img src="../assets/img/black_elegant_leather_jacket-120x156.jpg" alt="">
-                    </div>
-                    <hr>
-
-                    <div>
-                    <span>Black Leather Jacket</span>
-                    </div>
-                        
-                    <div>
-                    <img src="../assets/img/leather_gloves-120x156.jpg" alt="">
-                    </div>
-                    <hr>
-
-                    <div>
-                    <span>Black Leather Jacket <strong>$57</strong></span>
-                  </div>
-
-                  <div class="foto">
-                    <img src="../assets/img/spring_printed_dress-120x156.jpg" alt="">
-                </div>
-                    <hr>
-
-                </div>
-            </div>
-
-
-
-        </div>
 
     </div>
 </template>
    
 <script>
+
+import FooterColumn from './FooterColumn.vue';
 export default {
     name: 'MainCompBottom',
+    components: {
+     FooterColumn
+    },
     props: {
 
     }
@@ -245,20 +158,6 @@ hr {
     margin-bottom: 3rem;
 }
 
-.before-footer {
-
-    display: flex;
-    text-align: left;
-    font-size: smaller;
-    margin: auto;
-    padding: 5rem;
-    width: 90%;
-
-
-    div {
-        margin: auto;
-    }
-}
 
 </style>
    
